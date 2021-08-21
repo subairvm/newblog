@@ -34,12 +34,13 @@ const Navbar = (props) => {
             <li><NavLink to="/post">Posts</NavLink></li>
             <li><NavLink to="/contact-us">Contact Us</NavLink></li>
         </ul>
-        <div className="search" >
-  <form onSubmit={submitSearch} >
-<input type="text" className="searchInput" placeholder="Search" />
-<img onClick={openSearch} className="searchIcon" src={require("../../assets/icons/search.png")} alt="search" />
-</form>
-  </div>
+        <div className="search">
+            <form onSubmit={submitSearch}>
+                <input type="text" className={searchClass} placeholder="Search" />
+                <img onClick={openSearch} className="searchIcon" src={require('../../assets/icons/search.png').default} alt="Search" />
+            </form>
+            
+        </div>
     </div>
    )
 

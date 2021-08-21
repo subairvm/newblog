@@ -7,11 +7,35 @@ import './style.css';
 **/
 
 const Sidebar = (props) => {
-  return(
-    <Card style={{width:'27%'}}>
-      Sidebar
-    </Card>
-   )
+  return (
+    <div className="sidebarContainer">
+      <Card style={{ marginBottom: '20px',padding:'20px',boxSizing:'border-box' }}>
+        <div className="cardHeader">
+          <span> about Us</span>
+        </div>
+        <div className="profileImageContainer">
+          <img src={require('../../blogPostImages/1.jpeg').default} alt="About Us" />
+        </div>
+      </Card>
+      <Card>
+        <div className="cardBody">
+          <p className="personalBio">MES Mampad Collage Remembreble</p>
 
- }
- export default Sidebar;
+        </div>
+      </Card>
+      <Card>
+        <div className="cardHeader">
+          <span>Social Network</span>
+        </div>
+      </Card>
+      <Card>
+      <div className="cardHeader">
+          <span>Recent Post</span>
+        </div>
+      </Card>
+    </div>
+
+  )
+
+}
+export default Sidebar;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../UI/Card';
 import './style.css';
+
 /**
 * @author
 * @function BlogPost
@@ -17,7 +18,7 @@ export const BlogPost = (props) => {
      </div>
 
      <div className="postImageContainer">
-       <img src={require('../../blogPostImages/02.jpg')} alt="Post Image"/>
+       <img src={require('../../blogPostImages/02.jpg').default} alt="Post Image"/>
      </div>
 </Card>
     </div>
