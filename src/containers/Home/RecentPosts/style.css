@@ -1,0 +1,10 @@
+.mainImageWrapper img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.HomeCantainer{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}

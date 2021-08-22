@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../../components/Sidebar";
 import Card from "../../components/UI/Card";
+import RecentPosts from "./RecentPosts";
 import './style.css';
 
 const Home = props=>{
@@ -37,17 +38,8 @@ const Home = props=>{
                </div>         
            </Card>
            <section className="HomeCantainer">
-           <div style={{width:'70%'}}>  
-           <Card style={{marginBottom:'20px'}}>
-               <div className="postimageWrapper">
-                   <img src={require('../../blogPostImages/LOGO.jpg').default}/>
-               </div>
-           </Card>
-           <Card style={{marginbottom:'20px 0'}}>
-              Post 2
-            </Card>
-            </div>
-            <Sidebar/>
+           <RecentPosts/>
+           
             </section>
         </div>
     )
