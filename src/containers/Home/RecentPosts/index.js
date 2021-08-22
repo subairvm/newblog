@@ -8,9 +8,10 @@ import './style.css'
 
  const RecentPosts = (props) => {
   return(
-        <div style={{width:'70%'}}>  
+      
+        <div style={props.style}>  
            <Card style={{marginBottom:'20px'}}>
-               <div className="postimageWrapper">
+               <div className="postImageWrapper">
                    <img src={require('../../../blogPostImages/02.jpeg').default}/>
                </div>
                <div style ={{textAlign:'center'}}>
@@ -20,7 +21,8 @@ import './style.css'
                    <button>Read More</button>
                </div>
            </Card>
-    </div>
+           </div>
+    
    )
 
  }

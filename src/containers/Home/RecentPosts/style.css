@@ -1,4 +1,4 @@
-.mainImageWrapper img{
+/* .mainImageWrapper img{
     width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -7,4 +7,14 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
+} */
+.postImageWrapper{
+    height: 450px;
+    overflow: hidden;
+}
+
+.postImageWrapper img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
